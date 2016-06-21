@@ -68,3 +68,15 @@ Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，
 无序列表使用星号、加号或是减号作为列表标记，例如：*Red、+Green、-Blue
 
 有序列表则使用数字接着一个英文句点，例如：1.hello；注意，你在列表标记上使用的数字并不会影响输出的 HTML 结果，你可以使用 1. Bird 1. McHale 1. Parish 甚至6.ADC 3.EFG 9.XYZ 都可以实现正确的有序列表显示。
+
+###超链接：
+
+Markdown 支持两种形式的链接语法： 行内式和参考式两种形式。
+
+不管是哪一种，链接文字都是用 [方括号]来标记；要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如： [This link](http://example.net/) has no title attribute
+
+如果你是要链接到同样主机的资源，你可以使用相对路径： See my [About](/about/) page for details
+
+参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记： This is [an example][id] reference-style link
+
+接着，在文件的任意处，你可以把这个标记的链接内容定义出来： [id]: http://example.com/ "Optional Title Here"
