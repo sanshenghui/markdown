@@ -80,3 +80,7 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记： This is [an example][id] reference-style link
 
 接着，在文件的任意处，你可以把这个标记的链接内容定义出来： [id]: http://example.com/ "Optional Title Here"
+
+###图片：
+
+图片的语法和超链接非常相似。只显示图片：![github](http:// example.com /unicorn.png “github”)；点击图片进入另一个网页：[![image]](http://www. example .com/) [image]: http:// example .com/ example .png “ example “
